@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { Message, MessageBox } from 'element-ui'
-import store from '@/store'
+import { Message } from 'element-ui'
+// import store from '@/store'
 // import { getToken } from '@/utils/auth'
 
 // 创建axios实例
@@ -16,7 +16,7 @@ service.interceptors.request.use(
     //   config.headers['token'] = getToken() // 让每个请求携带自定义token 请根据实际情况自行修改
     // }
     if (process.env.NODE_ENV === 'development') {
-      config.url = `${config.url}`
+      config.url = `/api/${config.url}`
     }
     return config
   },
@@ -36,10 +36,10 @@ service.interceptors.response.use(
       Message({
         type: 'error',
         duration: '1000',
-        onClose () {
-          store.dispatch('user/logOut').then(() => {
-            location.reload() // 为了重新实例化vue-router对象 避免bug
-          })
+        onClose() {
+        //   store.dispatch('user/logOut').then(() => {
+        //     location.reload() // 为了重新实例化vue-router对象 避免bug
+        //   })
         },
         message: '登录过期，请重新登录'
       })
