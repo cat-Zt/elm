@@ -14,12 +14,19 @@ const IndexRoute = {
 let routes = [
   IndexRoute,
   {
+    path: '/address',
+    component: () =>
+      import('@/views/address/Main.vue')
+  },
+  //  表示当有错误操作时，自动跳转到address这个路由中
+  {
     path: '*',
-    redirect: '/404'
+    redirect: '/address'
   }
 ]
 
-// 每次新增业务模块的时候，我们都要在路由下面新增一个子路由模块，然后在index.js中导入。通过上面的自动扫描全局组件注册，我们也可以实现自动扫描子模块路由并导入
+// 每次新增业务模块的时候，我们都要在路由下面新增一个子路由模块，然后在index.js中导入。
+// 通过上面的自动扫描全局组件注册，我们也可以实现自动扫描子模块路由并导入
 
 const routerContext = require.context('./', true, /index\.js$/)
 routerContext.keys().forEach(route => {

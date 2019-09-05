@@ -7,6 +7,13 @@ const address = {
       method: 'get',
       params: params
     }).then(res => res)
+  },
+  getAllCity (params) {
+    return request({
+      url: '/allcity',
+      method: 'get',
+      params: params
+    })
   }
 }
 export default address
