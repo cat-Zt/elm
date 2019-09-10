@@ -7,7 +7,7 @@
         <!-- 回退一步 -->
         <van-icon name="arrow-left" v-if="goback" @click="$router.go(-1)" size="6vw"/>
         <!-- 中间文字 -->
-        <div v-if="headTitle" class="">{{headTitle}}</div>
+        <div v-if="headTitle" class="headTitle">{{headTitle}}</div>
         <!-- 跳转登录or注册 -->
         <div v-if="signinUp">
           <router-link  class="head-module-router" to="/">{{rightString}}</router-link>
@@ -93,8 +93,13 @@ export default {
   .classless(justify-content, space-between);
   .classless(align-items, center);
   // 路由跳转
-  .head-module-router{
+  .head-module-router {
     color: #fff;
+  }
+  // 中间文字
+  .headTitle {
+    font-size: 4vw;
+    font-weight: 700;
   }
 }
 </style>
