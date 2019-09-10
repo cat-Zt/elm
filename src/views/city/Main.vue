@@ -8,26 +8,29 @@
                 input-align="left"
                 placeholder="请输入学校、商务楼、地址"
                 show-action
-                @search="onSearch">
+               >
                 <div slot="action" @click="onSearch">搜索</div>
              </van-search>
        </div>
        <!-- 搜索历史 -->
        <div class="search-history">
-           <div class="history-title">搜索历史</div>
+           <div v-if="ishsowHistory" class="history-title">搜索历史</div>
            <div class="history-content">
                <ul>
-                   <li class="detail-content" v-for="(item, index) in detailContent" :key="index">
+                   <li class="detail-content" v-for="(item, index) in detailContent" :key="index" @click="stockpile(index,item.geohash)">
                        <div>{{item.name}}</div>
                        <div>{{item.address}}</div>
                    </li>
-                   <li class="clearAll">清空所有</li>
+                   <li v-if="ishsowHistory&&detailContent.length" class="clearAll" @click="clearAll">清空所有</li>
+                   <li v-if="!detailContent.length" class="clearAll" style="height: 8vh">暂无搜索历史</li>
                </ul>
            </div>
        </div>
     </div>
 </template>
 <script>
+import { setStore, getStore, removeStore } from '../../utils/index.js'
+import cityDetail from './cityDetail.json'
 export default {
     data() {
         return {
@@ -36,16 +39,54 @@ export default {
             rightString: '切换城市',
             headTitle: '佛山',
             value: '',
-            detailContent: [
-                {"name":"都是恋人","address":"广东省佛山市顺德区乐从水藤大道54号东南方向73米ujfdkvhfdijvhfdiuvvfdiuvfdifdhvifdhviufdvhfdiuvhfiu","latitude":22.917584,"longitude":113.073342,"geohash":"22.917584,113.073342"},
-                {"name":"人人都是艺术家","address":"广东省佛山市南海区桂澜中路18号中海环宇城","latitude":23.043304,"longitude":113.157741,"geohash":"23.043304,113.157741"},
-                {"name":"人人都是艺术家","address":"广东省佛山市南海区桂澜中路18号中海环宇城","latitude":23.043304,"longitude":113.157741,"geohash":"23.043304,113.157741"}
-            ]
+            ishsowHistory: true,
+            cityDetail: cityDetail,
+            detailContent: [], // 搜索城市列表
+            placeHistory:[], // 历史搜索记录
         }
     },
+    mounted () {
+        this.initData();
+    },
     methods: {
+        initData(){
+           //获取搜索历史记录
+            if (getStore('searchCity')) {
+               this.detailContent = JSON.parse(getStore('searchCity'));
+            }else{
+                this.detailContent = [];
+            }
+        },
+        // 搜索
         onSearch () {
-            console.log(this.value)
+           this.detailContent = this.cityDetail;
+           this.ishsowHistory = false;
+        },
+        // 将搜索的数据存储
+        stockpile (index, geohash) {
+            const history = getStore('searchCity');
+            let choosePlace = this.detailContent[index];
+            console.log('geohash',geohash);
+            if(history) {
+              let isStore = false;
+              this.placeHistory = JSON.parse(history);
+              this.placeHistory.forEach(value => {
+                  if(geohash === value.geohash) {
+                      isStore = true;
+                  }
+              })
+              if(!isStore) {
+                  this.placeHistory.push(choosePlace);
+              }
+            } else {
+              this.placeHistory.push(choosePlace)
+            }
+            setStore('searchCity', this.placeHistory);
+            this.$router.push({path: '/home', query: {geohash}})
+        },
+        clearAll(){
+            removeStore('searchCity');
+            this.initData();
         }
     }
 }
