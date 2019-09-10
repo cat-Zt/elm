@@ -5,12 +5,16 @@
         <!-- search -->
         <slot name='search'></slot>
         <!-- 回退一步 -->
-        <van-icon name="arrow-left" v-if="goback" @click="$router.go(-1)" size="2vw"/>
+        <van-icon name="arrow-left" v-if="goback" @click="$router.go(-1)" size="6vw"/>
         <!-- 中间文字 -->
         <div v-if="headTitle" class="">{{headTitle}}</div>
         <!-- 跳转登录or注册 -->
         <div v-if="signinUp">
-          <router-link  class="head-module-router" to="/">登录|注册</router-link>
+          <router-link  class="head-module-router" to="/">{{rightString}}</router-link>
+        </div>
+        <!-- 跳转切换address页面 -->
+        <div v-if="gotoAddress">
+          <router-link  class="head-module-router" to="/address">{{rightString}}</router-link>
         </div>
         <slot name="edit"></slot>
         <slot name="msite-title"></slot>
@@ -36,6 +40,18 @@ export default {
       }
     },
     signinUp: {
+      type: Boolean,
+      default () {
+        return false
+      }
+    },
+    rightString: {
+      type: String,
+      default () {
+        return ''
+      }
+    },
+    gotoAddress: {
       type: Boolean,
       default () {
         return false

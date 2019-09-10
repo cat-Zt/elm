@@ -1,6 +1,6 @@
 <template>
   <div class="address">
-    <headModule :signinUp="signinUp">
+    <headModule :rightString='rightString' :signinUp="signinUp">
         <span slot="logo" class="address-logo">
             <img class="images" src="../../images/logo.png" alt="">
         </span>
@@ -10,7 +10,7 @@
             <span>当前定位城市 :</span>
             <span>如定位错误,请在城市列表中选择</span>
         </div>
-        <div class="locatingCity-content">
+        <div class="locatingCity-content" @click="goCity(item.id)">
             <span>{{currentCity}}</span>
             <van-icon size="4vw" name="arrow" />
         </div>
@@ -37,6 +37,8 @@
 <script>
 import MapLoader from '../../api/map.js'
 import address from '../../api/address.js'
+import hotCity from './hot.json'
+import allCity from './all.json'
 export default {
   data () {
     return {
@@ -44,7 +46,12 @@ export default {
       currentCity: '获取定位失败',
       hotSpecific: [],
       // 城市排序
-      citySort: {}
+      citySort: {},
+      rightString: '登录 | 注册',
+      // 热门城市
+      hotCity: hotCity,
+      // 所以城市
+      allCity: allCity
     }
   },
   methods: {
@@ -69,22 +76,24 @@ export default {
             showToast('定位失败')
           } else {
             _this.currentCity = result.city
-            console.log(result.city)
+            console.log(result)
           }
         }
       })
     },
     // 获取热门城市
     getHotCity () {
-      address.getHotCity().then(res => {
-        this.hotSpecific = res;
-      })
+      // address.getHotCity().then(res => {
+      //   this.hotSpecific = res;
+      // })
+      this.hotSpecific = this.hotCity;
     },
     // 获取所以城市
     getAllcity () {
-      address.getAllCity().then(res => {
-        this.citySort = res;
-      })
+      // address.getAllCity().then(res => {
+      //   this.citySort = res;
+      // })
+      this.citySort = this.allCity;
     },
     // 跳转city
     goCity(item) {
@@ -98,7 +107,7 @@ export default {
     this.getHotCity();
     this.getAllcity();
   }, 
-  computed:{
+  computed: {
         //将获取的数据按照A-Z字母开头排序
     sortgroupcity(){
       let sortobj = {};
@@ -109,7 +118,7 @@ export default {
       }
       return sortobj
     }
-  },
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -198,6 +207,7 @@ export default {
         .locatingCity-All{
             border-top: 2px solid #e4e4e4;
             border-bottom: 2px solid #e4e4e4;
+            color: #666666;
             // 城市顶部
             .locatingCity-All-title {
                 height: 7vh;
