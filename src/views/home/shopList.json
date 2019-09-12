@@ -1848,5 +1848,540 @@
             }
         ],
         "__v": 0
+    },
+    {
+        "name": "海王1",
+        "address": "湖北省武汉市洪山区珞瑜路726号世界城光谷步行街F2",
+        "id": 3340,
+        "latitude": 30.505061,
+        "longitude": 114.40319,
+        "location": [
+            121.42719,
+            31.13257
+        ],
+        "phone": "0",
+        "category": "鲜花蛋糕/面包",
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保",
+                "_id": "5c04f7b2777a205b1afd1920"
+            },
+            {
+                "description": "准时必达，超时秒赔",
+                "icon_color": "57A9FF",
+                "icon_name": "准",
+                "id": 9,
+                "name": "准时达",
+                "_id": "5c04f7b2777a205b1afd191f"
+            },
+            {
+                "description": "该商家支持开发票，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票",
+                "_id": "5c04f7b2777a205b1afd191e"
+            }
+        ],
+        "status": 0,
+        "recent_order_num": 819,
+        "rating_count": 892,
+        "rating": 4.4,
+        "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+        "piecewise_agent_fee": {
+            "tips": "配送费约¥5"
+        },
+        "opening_hours": [
+            "8:30/20:30"
+        ],
+        "license": {
+            "catering_service_license_image": "16773678ecb23180.png",
+            "business_license_image": "1677367a59923179.jpg"
+        },
+        "is_new": true,
+        "is_premium": true,
+        "image_path": "https://fuss10.elemecdn.com/a/fa/d41b04d520d445dc5de42dae9a384jpeg.jpeg",
+        "identification": {
+            "registered_number": "",
+            "registered_address": "",
+            "operation_period": "",
+            "licenses_scope": "",
+            "licenses_number": "",
+            "licenses_date": "",
+            "legal_person": "",
+            "identificate_date": null,
+            "identificate_agency": "",
+            "company_name": ""
+        },
+        "float_minimum_order_amount": 20,
+        "float_delivery_fee": 5,
+        "distance": "990.6公里",
+        "order_lead_time": "10小时40分钟",
+        "description": "海鲜店",
+        "delivery_mode": {
+            "color": "57A9FF",
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "activities": [
+            {
+                "icon_name": "减",
+                "name": "满减优惠",
+                "description": "满30减5，满60减8",
+                "icon_color": "f07373",
+                "id": 1,
+                "_id": "5c04f7b2777a205b1afd1923"
+            },
+            {
+                "icon_name": "领",
+                "name": "进店领券",
+                "description": "11",
+                "icon_color": "E3EE0D",
+                "id": 2,
+                "_id": "5c04f7b2777a205b1afd1922"
+            },
+            {
+                "icon_name": "特",
+                "name": "优惠大酬宾",
+                "description": "22",
+                "icon_color": "EDC123",
+                "id": 3,
+                "_id": "5c04f7b2777a205b1afd1921"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "name": "海王1",
+        "address": "湖北省武汉市洪山区珞瑜路726号世界城光谷步行街F2",
+        "id": 3340,
+        "latitude": 30.505061,
+        "longitude": 114.40319,
+        "location": [
+            121.42719,
+            31.13257
+        ],
+        "phone": "0",
+        "category": "鲜花蛋糕/面包",
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保",
+                "_id": "5c04f7b2777a205b1afd1920"
+            },
+            {
+                "description": "准时必达，超时秒赔",
+                "icon_color": "57A9FF",
+                "icon_name": "准",
+                "id": 9,
+                "name": "准时达",
+                "_id": "5c04f7b2777a205b1afd191f"
+            },
+            {
+                "description": "该商家支持开发票，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票",
+                "_id": "5c04f7b2777a205b1afd191e"
+            }
+        ],
+        "status": 0,
+        "recent_order_num": 819,
+        "rating_count": 892,
+        "rating": 4.4,
+        "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+        "piecewise_agent_fee": {
+            "tips": "配送费约¥5"
+        },
+        "opening_hours": [
+            "8:30/20:30"
+        ],
+        "license": {
+            "catering_service_license_image": "16773678ecb23180.png",
+            "business_license_image": "1677367a59923179.jpg"
+        },
+        "is_new": true,
+        "is_premium": true,
+        "image_path": "https://fuss10.elemecdn.com/a/fa/d41b04d520d445dc5de42dae9a384jpeg.jpeg",
+        "identification": {
+            "registered_number": "",
+            "registered_address": "",
+            "operation_period": "",
+            "licenses_scope": "",
+            "licenses_number": "",
+            "licenses_date": "",
+            "legal_person": "",
+            "identificate_date": null,
+            "identificate_agency": "",
+            "company_name": ""
+        },
+        "float_minimum_order_amount": 20,
+        "float_delivery_fee": 5,
+        "distance": "990.6公里",
+        "order_lead_time": "10小时40分钟",
+        "description": "海鲜店",
+        "delivery_mode": {
+            "color": "57A9FF",
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "activities": [
+            {
+                "icon_name": "减",
+                "name": "满减优惠",
+                "description": "满30减5，满60减8",
+                "icon_color": "f07373",
+                "id": 1,
+                "_id": "5c04f7b2777a205b1afd1923"
+            },
+            {
+                "icon_name": "领",
+                "name": "进店领券",
+                "description": "11",
+                "icon_color": "E3EE0D",
+                "id": 2,
+                "_id": "5c04f7b2777a205b1afd1922"
+            },
+            {
+                "icon_name": "特",
+                "name": "优惠大酬宾",
+                "description": "22",
+                "icon_color": "EDC123",
+                "id": 3,
+                "_id": "5c04f7b2777a205b1afd1921"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "name": "海王1",
+        "address": "湖北省武汉市洪山区珞瑜路726号世界城光谷步行街F2",
+        "id": 3340,
+        "latitude": 30.505061,
+        "longitude": 114.40319,
+        "location": [
+            121.42719,
+            31.13257
+        ],
+        "phone": "0",
+        "category": "鲜花蛋糕/面包",
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保",
+                "_id": "5c04f7b2777a205b1afd1920"
+            },
+            {
+                "description": "准时必达，超时秒赔",
+                "icon_color": "57A9FF",
+                "icon_name": "准",
+                "id": 9,
+                "name": "准时达",
+                "_id": "5c04f7b2777a205b1afd191f"
+            },
+            {
+                "description": "该商家支持开发票，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票",
+                "_id": "5c04f7b2777a205b1afd191e"
+            }
+        ],
+        "status": 0,
+        "recent_order_num": 819,
+        "rating_count": 892,
+        "rating": 4.4,
+        "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+        "piecewise_agent_fee": {
+            "tips": "配送费约¥5"
+        },
+        "opening_hours": [
+            "8:30/20:30"
+        ],
+        "license": {
+            "catering_service_license_image": "16773678ecb23180.png",
+            "business_license_image": "1677367a59923179.jpg"
+        },
+        "is_new": true,
+        "is_premium": true,
+        "image_path": "https://fuss10.elemecdn.com/a/fa/d41b04d520d445dc5de42dae9a384jpeg.jpeg",
+        "identification": {
+            "registered_number": "",
+            "registered_address": "",
+            "operation_period": "",
+            "licenses_scope": "",
+            "licenses_number": "",
+            "licenses_date": "",
+            "legal_person": "",
+            "identificate_date": null,
+            "identificate_agency": "",
+            "company_name": ""
+        },
+        "float_minimum_order_amount": 20,
+        "float_delivery_fee": 5,
+        "distance": "990.6公里",
+        "order_lead_time": "10小时40分钟",
+        "description": "海鲜店",
+        "delivery_mode": {
+            "color": "57A9FF",
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "activities": [
+            {
+                "icon_name": "减",
+                "name": "满减优惠",
+                "description": "满30减5，满60减8",
+                "icon_color": "f07373",
+                "id": 1,
+                "_id": "5c04f7b2777a205b1afd1923"
+            },
+            {
+                "icon_name": "领",
+                "name": "进店领券",
+                "description": "11",
+                "icon_color": "E3EE0D",
+                "id": 2,
+                "_id": "5c04f7b2777a205b1afd1922"
+            },
+            {
+                "icon_name": "特",
+                "name": "优惠大酬宾",
+                "description": "22",
+                "icon_color": "EDC123",
+                "id": 3,
+                "_id": "5c04f7b2777a205b1afd1921"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "name": "海王1",
+        "address": "湖北省武汉市洪山区珞瑜路726号世界城光谷步行街F2",
+        "id": 3340,
+        "latitude": 30.505061,
+        "longitude": 114.40319,
+        "location": [
+            121.42719,
+            31.13257
+        ],
+        "phone": "0",
+        "category": "鲜花蛋糕/面包",
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保",
+                "_id": "5c04f7b2777a205b1afd1920"
+            },
+            {
+                "description": "准时必达，超时秒赔",
+                "icon_color": "57A9FF",
+                "icon_name": "准",
+                "id": 9,
+                "name": "准时达",
+                "_id": "5c04f7b2777a205b1afd191f"
+            },
+            {
+                "description": "该商家支持开发票，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票",
+                "_id": "5c04f7b2777a205b1afd191e"
+            }
+        ],
+        "status": 0,
+        "recent_order_num": 819,
+        "rating_count": 892,
+        "rating": 4.4,
+        "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+        "piecewise_agent_fee": {
+            "tips": "配送费约¥5"
+        },
+        "opening_hours": [
+            "8:30/20:30"
+        ],
+        "license": {
+            "catering_service_license_image": "16773678ecb23180.png",
+            "business_license_image": "1677367a59923179.jpg"
+        },
+        "is_new": true,
+        "is_premium": true,
+        "image_path": "https://fuss10.elemecdn.com/a/fa/d41b04d520d445dc5de42dae9a384jpeg.jpeg",
+        "identification": {
+            "registered_number": "",
+            "registered_address": "",
+            "operation_period": "",
+            "licenses_scope": "",
+            "licenses_number": "",
+            "licenses_date": "",
+            "legal_person": "",
+            "identificate_date": null,
+            "identificate_agency": "",
+            "company_name": ""
+        },
+        "float_minimum_order_amount": 20,
+        "float_delivery_fee": 5,
+        "distance": "990.6公里",
+        "order_lead_time": "10小时40分钟",
+        "description": "海鲜店",
+        "delivery_mode": {
+            "color": "57A9FF",
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "activities": [
+            {
+                "icon_name": "减",
+                "name": "满减优惠",
+                "description": "满30减5，满60减8",
+                "icon_color": "f07373",
+                "id": 1,
+                "_id": "5c04f7b2777a205b1afd1923"
+            },
+            {
+                "icon_name": "领",
+                "name": "进店领券",
+                "description": "11",
+                "icon_color": "E3EE0D",
+                "id": 2,
+                "_id": "5c04f7b2777a205b1afd1922"
+            },
+            {
+                "icon_name": "特",
+                "name": "优惠大酬宾",
+                "description": "22",
+                "icon_color": "EDC123",
+                "id": 3,
+                "_id": "5c04f7b2777a205b1afd1921"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "name": "海王1",
+        "address": "湖北省武汉市洪山区珞瑜路726号世界城光谷步行街F2",
+        "id": 3340,
+        "latitude": 30.505061,
+        "longitude": 114.40319,
+        "location": [
+            121.42719,
+            31.13257
+        ],
+        "phone": "0",
+        "category": "鲜花蛋糕/面包",
+        "supports": [
+            {
+                "description": "已加入“外卖保”计划，食品安全有保障",
+                "icon_color": "999999",
+                "icon_name": "保",
+                "id": 7,
+                "name": "外卖保",
+                "_id": "5c04f7b2777a205b1afd1920"
+            },
+            {
+                "description": "准时必达，超时秒赔",
+                "icon_color": "57A9FF",
+                "icon_name": "准",
+                "id": 9,
+                "name": "准时达",
+                "_id": "5c04f7b2777a205b1afd191f"
+            },
+            {
+                "description": "该商家支持开发票，请在下单时填写好发票抬头",
+                "icon_color": "999999",
+                "icon_name": "票",
+                "id": 4,
+                "name": "开发票",
+                "_id": "5c04f7b2777a205b1afd191e"
+            }
+        ],
+        "status": 0,
+        "recent_order_num": 819,
+        "rating_count": 892,
+        "rating": 4.4,
+        "promotion_info": "欢迎光临，用餐高峰请提前下单，谢谢",
+        "piecewise_agent_fee": {
+            "tips": "配送费约¥5"
+        },
+        "opening_hours": [
+            "8:30/20:30"
+        ],
+        "license": {
+            "catering_service_license_image": "16773678ecb23180.png",
+            "business_license_image": "1677367a59923179.jpg"
+        },
+        "is_new": true,
+        "is_premium": true,
+        "image_path": "https://fuss10.elemecdn.com/a/fa/d41b04d520d445dc5de42dae9a384jpeg.jpeg",
+        "identification": {
+            "registered_number": "",
+            "registered_address": "",
+            "operation_period": "",
+            "licenses_scope": "",
+            "licenses_number": "",
+            "licenses_date": "",
+            "legal_person": "",
+            "identificate_date": null,
+            "identificate_agency": "",
+            "company_name": ""
+        },
+        "float_minimum_order_amount": 20,
+        "float_delivery_fee": 5,
+        "distance": "990.6公里",
+        "order_lead_time": "10小时40分钟",
+        "description": "海鲜店",
+        "delivery_mode": {
+            "color": "57A9FF",
+            "id": 1,
+            "is_solid": true,
+            "text": "蜂鸟专送"
+        },
+        "activities": [
+            {
+                "icon_name": "减",
+                "name": "满减优惠",
+                "description": "满30减5，满60减8",
+                "icon_color": "f07373",
+                "id": 1,
+                "_id": "5c04f7b2777a205b1afd1923"
+            },
+            {
+                "icon_name": "领",
+                "name": "进店领券",
+                "description": "11",
+                "icon_color": "E3EE0D",
+                "id": 2,
+                "_id": "5c04f7b2777a205b1afd1922"
+            },
+            {
+                "icon_name": "特",
+                "name": "优惠大酬宾",
+                "description": "22",
+                "icon_color": "EDC123",
+                "id": 3,
+                "_id": "5c04f7b2777a205b1afd1921"
+            }
+        ],
+        "__v": 0
     }
 ]

@@ -36,6 +36,11 @@
                             </div>
                         </div>
                     </li>
+                    <li class="liPartent">
+                        <span v-if="btnFlag" @click="backTop" class="iconfont icon-huidaodingbu goBackTop"></span>
+                        <p v-if="touchend" class="empty_data">加载更多</p>
+                        <p v-if="showBottom" class="empty_data">人家也是有底线的</p>
+                    </li>
                 </ul>
         </div>
         <transition name="loading">
@@ -44,7 +49,6 @@
     </div>
 </template>
 <script>
-import { type } from 'os';
 export default {
     name: 'shopList',
     props: {
@@ -59,15 +63,39 @@ export default {
            default () {
                return false
            }
+       },
+       touchend: {
+           type: Boolean,
+           default () {
+               return false
+           }
+       },
+       btnFlag: {
+           type: Boolean,
+           default () {
+               return false
+           }
+       },
+       showBottom: {
+           type:　Boolean,
+           default () {
+               return false
+           }
        }
     },
     data () {
         return {
-           
+          
         }
     },
     mounted() {
         console.log('shopList', this.shopList)
+        console.log('btnFlag',this.btnFlag)
+    },
+    methods: {
+        backTop () {
+            this.$emit('backTop')
+        }
     }
 }
 </script>
@@ -167,6 +195,19 @@ export default {
             }
         }
        
+    }
+    .empty_data {
+        text-align: center;
+        color: #666;
+    }
+    .liPartent {
+        .goBackTop {
+            position: fixed;
+            bottom: 15vh;
+            right: 10vw;
+            color: #fd5a2d;
+            font-size: 7vw;
+        }
     }
 }
 .loading-enter-active, .loading-leave-active {
