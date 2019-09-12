@@ -100,6 +100,9 @@ export default {
   .headTitle {
     font-size: 4vw;
     font-weight: 700;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
   }
 }
 </style>
