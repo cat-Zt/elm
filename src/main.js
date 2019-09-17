@@ -20,6 +20,11 @@ import '@/style/index.less'
 // 引入vue 跨域
 import VueResource from 'vue-resource'
 
+// 引入 v-Viewer
+import 'viewerjs/dist/viewer.css'
+import Viewer from 'v-viewer'
+Vue.use(Viewer)
+
 Vue.use(Vant)
 Vue.use(ElementUI)
 Vue.use(VueResource)

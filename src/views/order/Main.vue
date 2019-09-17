@@ -1,6 +1,9 @@
 <template>
     <div>
         <headModule :goback="goback" :headTitle="headTitle"  :rightString="rightString"  :signinUp="signinUp"></headModule>
+        <div class="order">
+            <packDownload></packDownload>
+        </div>
         <navFooter :changeIndex="changeIndex"></navFooter>
     </div>
 </template>
@@ -19,5 +22,7 @@ export default {
 }
 </script>
 <style lang="less">
-    
+    .order {
+        margin-top: 7vh;
+    }
 </style>
